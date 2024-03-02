@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "{no_doc}.-.MM.-.YYYY.-.####",
+ "creation": "2024-03-02 10:32:56.853862",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "no_surat_jalan",
+  "date",
+  "column_break_q9mcj",
+  "customer",
+  "alamat",
+  "list_product_section",
+  "item",
+  "amended_from",
+  "no_doc"
+ ],
+ "fields": [
+  {
+   "fieldname": "no_surat_jalan",
+   "fieldtype": "Data",
+   "label": "No Surat Jalan"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "alamat",
+   "fieldtype": "Data",
+   "label": "Alamat"
+  },
+  {
+   "fieldname": "column_break_q9mcj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "options": "Surat Jalan Item"
+  },
+  {
+   "fieldname": "list_product_section",
+   "fieldtype": "Section Break",
+   "label": "List Product"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Surat Jalan",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "DO",
+   "fieldname": "no_doc",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "no_doc",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-02 10:58:06.080857",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Surat Jalan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

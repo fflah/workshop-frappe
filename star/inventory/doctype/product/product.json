@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "{product_code}.-.####",
+ "creation": "2024-03-02 09:50:17.145208",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_name",
+  "product_code",
+  "product_category",
+  "uom",
+  "column_break_vsvcv",
+  "product_weight",
+  "barcode",
+  "section_break_osoc6",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "product_code",
+   "fieldtype": "Data",
+   "label": "Product Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "product_category",
+   "fieldtype": "Link",
+   "label": "Product Category",
+   "options": "Product Category"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "product_weight",
+   "fieldtype": "Float",
+   "label": "Product Weight"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Select",
+   "label": "UOM",
+   "options": "\nPCS\nCT"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_vsvcv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_osoc6",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-02 10:25:15.350266",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Product",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
